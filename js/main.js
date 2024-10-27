@@ -65,13 +65,11 @@ const app = {
 			template.querySelector('.modal ul').appendChild(li);
 		}
 		template.querySelector('.modal').style.display = 'block';
-		let confettiInterval = setInterval(() => {
-			jsConfetti.addConfetti();
-		}, 2000);
+		jsConfetti.addConfetti();
 		
 		template.querySelector('#reset').addEventListener('click', () => {
+			jsConfetti.clearCanvas();
 			this.resetRace();
-			clearInterval(confettiInterval);
 		});
 	},
 	resetRace() {
