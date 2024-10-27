@@ -34,7 +34,6 @@ const app = {
 			template.querySelector('audio').play();
 			template.querySelector('audio').volume = 0.4;
 			btnStart.remove();
-			jsConfetti.addConfetti();
 			racers.forEach((racer, i) => {
 				racer.classList.add('run');
 				racer.style.cssText = `top: ${i * 40}px; transition: ${students[i].pace}s linear;`;
