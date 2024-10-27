@@ -1,0 +1,45 @@
+@keyframes running-girl {
+	0% {
+		background: url(../images/girl/3.png) no-repeat center;
+		background-size: contain;
+	}
+	25% {
+		background: url(../images/girl/4.png) no-repeat center;
+		background-size: contain;
+	}
+	50% {
+		background: url(../images/girl/5.png) no-repeat center;
+		background-size: contain;
+	}
+	75% {
+		background: url(../images/girl/1.png) no-repeat center;
+		background-size: contain;
+	}
+	100% {
+		background: url(../images/girl/2.png) no-repeat center;
+		background-size: contain;
+	}
+}
+
+@keyframes running-boy {
+	0% {
+		background: url(../images/boy/3.png) no-repeat center;
+		background-size: contain;
+	}
+	25% {
+		background: url(../images/boy/4.png) no-repeat center;
+		background-size: contain;
+	}
+	50% {
+		background: url(../images/boy/5.png) no-repeat center;
+		background-size: contain;
+	}
+	75% {
+		background: url(../images/boy/1.png) no-repeat center;
+		background-size: contain;
+	}
+	100% {
+		background: url(../images/boy/2.png) no-repeat center;
+		background-size: contain;
+	}
+}

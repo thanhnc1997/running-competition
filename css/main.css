@@ -1,0 +1,169 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-family: "Be Vietnam Pro", sans-serif;
+}
+
+main {
+	height: 100vh;
+	overflow: hidden;
+	padding: 40px 12px 12px;
+	position: relative;
+}
+
+button {
+	background: #FFCB05;
+	box-shadow: 6px 6px 0 0 #1B449C;
+	color: #1B449C;
+	border: 0;
+	border-radius: 12px;
+	font-size: 28px;
+	cursor: pointer;
+	padding: 14px 28px;
+	font-family: "Bungee", cursive;
+}
+
+#start {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.list {
+	list-style: none;
+	position: relative;
+}
+
+.list .item {
+	position: absolute;
+	z-index: 11;
+	left: 0;
+}
+
+.list .item.run {
+	left: 110vw;
+}
+
+.item .name {
+	position: absolute;
+	display: block;
+	padding: 6px;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px 1px rgba(0, 0, 0, .15);
+	font-size: 12px;
+	top: 0;
+	left: 100%;
+	width: max-content;
+	font-weight: 600;
+}
+
+.item .image {
+	width: 60px;
+	height: 80px;
+}
+
+.item .image.girl {
+	background: url(../images/girl/2.png) no-repeat center;
+	background-size: contain;
+}
+
+.item.run .image.girl {
+	animation: running-girl .4s infinite;
+}
+
+.item .image.boy {
+	background: url(../images/boy/2.png) no-repeat center;
+	background-size: contain;
+}
+
+.item.run .image.boy {
+	animation: running-boy .4s infinite;
+}
+
+.stadium {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.stadium.start {
+	left: -100vw;
+	transition: 6s linear;
+}
+
+.stadium .grass {
+	width: 100%;
+	height: 100px;
+	background: url(../images/materials/grass.png) repeat-x top left;
+	background-size: contain;
+}
+
+.stadium .track {
+	width: 100%;
+	height: 100%;
+	background: url(../images/materials/track.png) repeat-x top left;
+	background-size: contain;
+	position: relative;
+}
+
+.stadium .finish {
+	position: absolute;
+	top: 0;
+	right: 14%;
+	bottom: 0;
+	width: 60px;
+	background: url(../images/materials/finish.png) repeat-y;
+	background-size: contain;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 11111;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	box-shadow: 0 4px 10px 1px rgba(0, 0, 0, .25);
+	border-radius: 28px;
+	background: #fff;
+	padding: 40px;
+	text-align: center;
+	width: 400px;
+}
+
+.modal h2 {
+	font-family: "Bungee", cursive;
+	color: #2d21c3;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.modal ul {
+	margin-bottom: 28px;
+	list-style: none;
+}
+
+.modal ul li {
+	text-align: left;
+	padding: 12px 22px;
+	font-family: "Bungee", cursive;
+	font-size: 22px;
+	background: #c7d9ff;
+	margin-bottom: 8px;
+	border-radius: 18px;
+}
+
+audio {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
