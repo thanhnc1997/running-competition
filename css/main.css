@@ -97,7 +97,7 @@ button {
 
 .stadium.start {
 	left: -100vw;
-	transition: 6s linear;
+	transition: 10s linear;
 }
 
 .stadium .grass {
