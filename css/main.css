@@ -68,8 +68,8 @@ button {
 }
 
 .item .image.girl {
-	background: url(../images/girl/2.png) no-repeat center;
-	background-size: contain;
+	background: url(../images/girl/2.png) no-repeat top center;
+	background-size: cover;
 }
 
 .item.run .image.girl {
@@ -77,8 +77,8 @@ button {
 }
 
 .item .image.boy {
-	background: url(../images/boy/2.png) no-repeat center;
-	background-size: contain;
+	background: url(../images/boy/2.png) no-repeat left center;
+	background-size: cover;
 }
 
 .item.run .image.boy {
@@ -97,7 +97,7 @@ button {
 
 .stadium.start {
 	left: -100vw;
-	transition: 10s linear;
+	transition: 12s linear;
 }
 
 .stadium .grass {

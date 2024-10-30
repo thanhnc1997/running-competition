@@ -8,7 +8,6 @@ const app = {
 				let j = Math.floor(Math.random() * (i + 1));
 				[arr[i], arr[j]] = [arr[j], arr[i]];
 			}
-
 			return arr;
 		}
 	},
@@ -32,8 +31,8 @@ const app = {
 		let stadium = document.querySelector('.stadium');
 		
 		btnStart.addEventListener('click', () => {
-			template.querySelector('audio').play();
-			template.querySelector('audio').volume = 0.4;
+			// template.querySelector('audio').play();
+			// template.querySelector('audio').volume = 0.4;
 			btnStart.style.display = 'none';
 			racers.forEach((racer, i) => {
 				racer.classList.add('run');
@@ -59,22 +58,21 @@ const app = {
 		}
 		
 		finisher.push(first, second);
-		for (let i = 0; i < finisher.length; i ++) {
+		for (let i in finisher) {
 			let li = document.createElement('li');
 			li.innerHTML = (i + 1) + `. ${finisher[i].name}`;
 			template.querySelector('.modal ul').appendChild(li);
 		}
+		
 		template.querySelector('.modal').style.display = 'block';
-		jsConfetti.addConfetti();
 		
 		template.querySelector('#reset').addEventListener('click', () => {
-			jsConfetti.clearCanvas();
 			this.resetRace();
 		});
 	},
 	resetRace() {
-		template.querySelector('audio').pause();
-		template.querySelector('audio').currentTime = 0;
+		// template.querySelector('audio').pause();
+		// template.querySelector('audio').currentTime = 0;
 		template.querySelector('.modal').style.display = 'none';
 		template.querySelector('#start').style.display = 'block';
 		template.querySelector('.stadium').classList.remove('start');
